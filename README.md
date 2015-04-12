@@ -1,20 +1,25 @@
 ##viper-py
 ------
     viper-py is a crawler framework written by python
+    [schedule](https://github.com/AssassinPig/viper-py/blob/master/schedule.md)
 
-<br>
-target
-1. 分布式爬虫
-2. 每个worker节点拥有bsf/dsf策略
-3. 添加保存页面功能
-<br>
-usage
-1. 需要在master上安装redis
-2. 在worker上修改配置settings.py
-3. write your self's XXXCrawlerItem class which inherit from class CrawlerItem 
+###target
+    1. 分布式爬虫
+    2. 每个worker节点拥有bsf/dsf策略
+    3. 添加保存页面功能
+###usage
+    1. 需要在master上安装redis
+    2. 在worker上修改配置settings.py
+    3. open example then write your self's XXXCrawlerItem class which inherit from class CrawlerItem 
+    4. 
+        ``` 	
+    	mkdir data
+    	python run_master.py
+    	python run_worker.py
+	```
 
+##distributed crawler implemented with redis
 ------
-1. distributed crawler implemented with redis
     <br>
     ```
                             master 
@@ -43,9 +48,8 @@ usage
     5. master get url node from fetched list 
     6. repeat from 1
 
-
-todo
-====
+##todo
+------
 1. bloom filter
 2. avoid ban
 3. watermark for worker
