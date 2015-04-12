@@ -16,6 +16,7 @@ usage
 ------
 1. distributed crawler implemented with redis
     <br>
+    ```
                             master 
                             /     \              
                            /       \
@@ -33,6 +34,7 @@ usage
                           \        /
                            \      /
                             woker1 worker2 ... workern
+    ```
 
     1. master put url node to todo list
     2. worker get url noode from todo list
