@@ -1,7 +1,7 @@
 ##viper-py
-------
+----------
     viper-py is a crawler framework written by python
-    [schedule](https://github.com/AssassinPig/viper-py/blob/master/schedule.md)
+here are more detail info: [schedule](https://github.com/AssassinPig/viper-py/blob/master/schedule.md)
 
 ###target
     1. 分布式爬虫
